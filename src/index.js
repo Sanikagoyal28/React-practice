@@ -19,33 +19,42 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-let wish;
+/*
+import Heading from "./components/heading.jsx";
+import List from "./components/List.jsx";
+import Greet from "./components/greet.jsx";
+import * as op from "./calculator.js";
 let date = new Date();
-const customStyle = {
-  color: "",
-};
-let time = date.getHours();
-if (time >= 0 && time <= 12) {
-  wish = "GOOD MORNING";
-  customStyle.color = "red";
-} else if (time > 12 && time <= 18) {
-  wish = "GOOD AFTERNOON";
-  customStyle.color = "green";
-} else if (time > 18 && time <= 24) {
-  wish = "GOOD NIGHT";
-  customStyle.color = "blue";
-}
+
 ReactDOM.render(
   <>
-    <h1 className="heading" style={customStyle}>
-      {wish}
-    </h1>
+    <Greet />
     <p>
-      Current time is : {date.getHours()+ ":"+date.getMinutes()+":"+date.getSeconds()}
+      Current time is :{" "}
+      {date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()}
     </p>
-    <p>
-      Current date is : {date.toLocaleDateString()}
-    </p>
+    <p>Current date is : {date.toLocaleDateString()}</p>
+    <Heading />
+    <List />
+    <Heading />
+    <ul>
+      <li>{op.add(1,3)}</li>
+      <li>{op.subtract(3,1)}</li>
+      <li>{op.multiply(1,3)}</li>
+      <li>{op.divide(3,2)}</li>
+      <li><op.H /></li>
+      <li><op.P /></li>
+    </ul>
+  </>,
+  document.getElementById("root")
+);
+*/
+
+import App from "./components/app";
+
+ReactDOM.render(
+  <>
+    <App />
   </>,
   document.getElementById("root")
 );
