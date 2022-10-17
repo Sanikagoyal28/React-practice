@@ -1,11 +1,18 @@
 import React from "react";
-import Keeper from "./keeper";
+// import emojimain from "./emojiMain";
+// import Keeper from "./keeper";
 // import Practice from "./practice";
+import emojiFunction from "./emoji";
+import emojis from "../emojis";
+import "../index.css";
 
-function App (){
+function App () {
     return <div>
-    <Keeper />
-    {/* <Practice /> */}
+    {/* <emojimain /> */}
+    <h1 className="emojiHead">EMOJIPEDIA</h1>
+ {emojis.map(emojiFunction)}
+    {/* <Keeper /> */}
+    {/* <Practice /> */} 
     </div>
 }
 
