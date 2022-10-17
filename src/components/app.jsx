@@ -1,14 +1,11 @@
 import React from "react";
+import Keeper from "./keeper";
+// import Practice from "./practice";
 
-import Header from "./header";
-import Footer from "./footer";
-import Note from "./note.jsx";
-
-function App(){
+function App (){
     return <div>
-        <Header />
-        <Footer />
-        <Note />
+    <Keeper />
+    {/* <Practice /> */}
     </div>
 }
 

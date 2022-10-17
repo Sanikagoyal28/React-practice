@@ -1,18 +1,20 @@
 import React from "react";
 import "../index.css";
+import Avatar from "./avatar.jsx";
+import Details from "./details";
 
 function Card(props) {
     return (
       <div>
+      <Avatar src="" alt="my-image" />
         <div className="blocks">
           <div className="top">
             <h2 className="name">{props.name}</h2>
-            <img className="image" src={props.source} alt="avatar" />
+            <Avatar src={props.source} />
             <hr />
           </div>
           <div className="bottom">
-            <p className="phone">{props.phone}</p>
-            <p className="gmail">{props.gmail}</p>
+            <Details phone={props.phone} email={props.gmail}/>
           </div>
         </div>
       </div>
@@ -20,3 +22,4 @@ function Card(props) {
   }
 
   export default Card;
+  
