@@ -1,0 +1,55 @@
+.outerDiv{
+    margin:auto;
+    background-color:rgb(146, 145, 145);
+    width:30vw;
+    height:30vh;
+    border-radius: 10px;
+    box-shadow: 0 0 6;
+    margin-top: 10vh;
+    padding-left: 20px;
+    padding-top: 1px;
+}
+.heading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buttonBg{
+    width:11.5vw;
+    height:7vh;
+    border-radius: 10px;
+    background-color: rgb(212, 204, 204,0.5);
+    position:relative;
+    left:8vw;
+    padding-top: 1.5vh;
+}
+#minus{
+    padding:0.5vh 1.2vw;
+    padding-bottom: 1.1vh;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-left:5px;
+    cursor: pointer;
+}
+#minus:hover{
+    background-color: rgb(128, 128, 128,0.7);
+}
+#plus:hover{
+    background-color: rgb(128, 128, 128,0.7);
+}
+#plus{
+    padding:0.5vh 1.2vw;
+    padding-bottom: 1.1vh;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-left:5px;
+    cursor: pointer;
+}
+#data{
+    padding:0.5vh 1.2vw;
+    padding-bottom: 1.1vh;
+    background-color:rgb(195, 186, 186,0.7);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-left:5px;
+}
