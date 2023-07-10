@@ -1,0 +1,11 @@
+/* add tailwind directives */
+@tailwind base;
+@tailwind components;
+
+/* combining various properties in your own defined class (useful when u have multiple elements with same css soo can use it in this easiest way)  */
+.btn{
+  @apply px-4 py-2 mb-8 mx-4 bg-blue-500 text-white rounded-lg hover:bg-blue-700;
+}
+
+/* to override the defined classes by utilities classes, import utilities here else there will be no override */
+@tailwind utilities;
