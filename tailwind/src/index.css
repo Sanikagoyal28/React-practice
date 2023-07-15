@@ -3,9 +3,48 @@
 @tailwind components;
 
 /* combining various properties in your own defined class (useful when u have multiple elements with same css soo can use it in this easiest way)  */
-.btn{
+.btn {
   @apply px-4 py-2 mb-8 mx-4 bg-blue-500 text-white rounded-lg hover:bg-blue-700;
 }
 
 /* to override the defined classes by utilities classes, import utilities here else there will be no override */
 @tailwind utilities;
+
+/* to show dropdown on hover in desktop mode */
+#list ul {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#list li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* to show dropdown on click in mobile view */
+@media (max-width: 760px) {
+  #list ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    max-height: 0px;
+    background: none;
+  }
+  #list ul li {
+    visibility: hidden;
+  }
+
+  #list #dropdown:checked ~ ul,
+  #list #dropdown2:checked ~ ul {
+    max-height: 100vh;
+    background-color: rgb(203 213 225);
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-top: 4px;
+  }
+
+  #list #dropdown:checked ~ ul > li,
+  #list #dropdown2:checked ~ ul > li {
+    visibility: visible;
+  }
+}
